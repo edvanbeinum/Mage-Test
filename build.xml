@@ -98,22 +98,22 @@
     <!-- Deploy module files for local testing -->
     <target name="deploy">
         <copy todir="${deploy.dir}/app" overwrite="yes" verbose="yes">
-            <fileset dir="app">
+            <fileset dir="src/app">
                 <exclude name="**/.svn"/>
             </fileset>
         </copy>
         <copy todir="${deploy.dir}/lib" overwrite="yes" verbose="yes">
-            <fileset dir="lib">
+            <fileset dir="src/lib">
                 <exclude name="**/.svn"/>
             </fileset>
         </copy>
         <copy todir="${deploy.dir}/tests" overwrite="yes" verbose="yes">
-            <fileset dir="test">
+            <fileset dir="src/test">
                 <exclude name="**/.svn"/>
             </fileset>
         </copy>
         <copy todir="${deploy.dir}/var" overwrite="yes" verbose="yes">
-            <fileset dir="var">
+            <fileset dir="src/var">
                 <exclude name="**/.svn"/>
             </fileset>
         </copy>
