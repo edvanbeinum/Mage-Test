@@ -108,7 +108,7 @@
             </fileset>
         </copy>
         <copy todir="${deploy.dir}/tests" overwrite="yes" verbose="yes">
-            <fileset dir="src/test">
+            <fileset dir="src/tests">
                 <exclude name="**/.svn"/>
             </fileset>
         </copy>
